@@ -27,7 +27,8 @@ print(max(a))
 ## sum() soma os valores de uma lista
 print(sum(a))
 
-print()
+## len() mostra a quantidade de itens de uma lista
+print(len(a))
 ## so use numeros para 
 print()
 
@@ -199,3 +200,18 @@ print(a)
 
 a.pop(2)
 print(a)
+
+print()
+print()
+print()
+
+## extend adiciona elementos de lista no final de uma lista
+## lista.extend([valor,valor])
+
+lista = [1, 2, 3]
+lista.extend([4,5])
+print(lista)
+
+print()
+print()
+print()
