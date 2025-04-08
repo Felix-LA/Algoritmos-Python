@@ -216,7 +216,7 @@
 # print()
 # print()
 
-# tuplas sao iguais lista varialvel = () -Crialçao de tupla
-# difernça que tuplas nao podem ser alteradas
-# forma de alterar lista para tupla  variavel = (tuple(variavel))
-# forma de alterar tupla para lista  variavel = (list(variavel))
+# ##Forma de reverter a ordem da lista
+
+# lista = [1, 2, 3]
+# ## lista.reverse()
