@@ -19,6 +19,7 @@ while True:
         print(quantidadeProduto)
         acaoEstoque = int(input("Informe o Codigo do Produto: "))
         if acaoEstoque in codigoProduto:
+#            for acaoEstoque in range
             acrescimo = int(input("Informe a Quantidade a ser acrescentada: "))
             quantidadeProduto[acaoEstoque] =+ quantidadeProduto[acaoEstoque] + acrescimo
         
