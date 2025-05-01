@@ -1,5 +1,5 @@
 nomeProduto = ['Caderno', 'Caneta', 'Lapis', 'Borracha', 'Regua']
-codigoProduto = [10, 20, 30, 40, 50] 
+codigoProduto = [0, 1, 2, 3, 4, 5] 
 quantidadeProduto = [10, 10, 10, 10, 10,]
 
 
@@ -19,15 +19,20 @@ while True:
         print(quantidadeProduto)
         acaoEstoque = int(input("Informe o Codigo do Produto: "))
         if acaoEstoque in codigoProduto:
-#            for acaoEstoque in range
             acrescimo = int(input("Informe a Quantidade a ser acrescentada: "))
             quantidadeProduto[acaoEstoque] =+ quantidadeProduto[acaoEstoque] + acrescimo
-        
         else: print("Produto nao encontrado")
-
-
-
-
+    
+    elif acao == "S":
+        print(nomeProduto)
+        print(codigoProduto)
+        print(quantidadeProduto)
+        acaoEstoque = int(input("Informe o Codigo do Produto: "))
+        if acaoEstoque in codigoProduto:
+            retirada = int(input("Informe a Quantidade a ser retirada: "))
+            if retirada > quantidadeProduto[acaoEstoque]:
+                quantidadeProduto[acaoEstoque] =+ quantidadeProduto[acaoEstoque] - retirada
+            else: print("A quantidade a ser retirada é menor que no estoque")
     
     elif acao == "R":
         print(nomeProduto)
