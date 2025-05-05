@@ -234,3 +234,6 @@
 
 # for item in lista:
 #     print(item)
+
+# for item in range(0, len(lista)):
+#     print(item)
