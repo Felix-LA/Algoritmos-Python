@@ -220,3 +220,17 @@
 
 # lista = [1, 2, 3]
 # ## lista.reverse()
+
+
+##############(For é feito para percorrer listas)
+############## (Intervalo)
+############ (INICIO, FIM, PASSO)
+
+
+# for i in range(0,     100,  2):
+#     print(i)
+
+# lista = ["MBA", "CPF", "USP", "APA", "IPA", "OPA", "UPA"]
+
+# for item in lista:
+#     print(item)
