@@ -34,6 +34,13 @@ while True:
         numeroDaAgencia.append(novoUsuarioNumeroDaAgencia)
         numeroDaConta.append(novoUsuarioNumeroDaConta)
         saldo.append(novoUsuarioSaldo)
+
+        print(novoUsuarioNome)
+        print(novoUsuarioCpf)
+        print(novoUsuarioRG)
+        print(novoUsuarioNumeroDaAgencia)
+        print(novoUsuarioNumeroDaConta)
+        print(novoUsuarioSaldo)
     
     elif acao == '1':
         nomeConsulta = input("Informe o Nome da Conta: ")
