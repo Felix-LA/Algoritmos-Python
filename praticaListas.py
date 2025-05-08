@@ -237,3 +237,11 @@
 
 # for item in range(0, len(lista)):
 #     print(item)
+
+# frutas = "banana"
+# for i in frutas: print(i)
+
+for i in range(5):
+    for j in range(6):
+        for k in range(7):
+            print(i,j,k)
