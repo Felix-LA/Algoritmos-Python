@@ -1,4 +1,4 @@
-estoque = {'Banana' : 20, 'Maca': 3, 'Caneta': 0}
+estoque = {'banana' : 20, 'maca': 3, 'caneta': 0}
 
 while True:
     print("-----MENU-----")
@@ -17,7 +17,7 @@ while True:
     
     elif acao == '1':
         consultarEstoque = input("Informe o nome do produto: ").lower()
-        print(estoque.get(consultarEstoque, "Produto Nao encontrado"))
+        print(estoque.get(consultarEstoque, "Produto Nao Disponivel"))
     elif acao  == '2':
         print("Ate logo")
         break
