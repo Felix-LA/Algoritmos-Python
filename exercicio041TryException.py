@@ -23,15 +23,15 @@ while True:
             print("4 - Voltar")
             try:
                 acaoRelatorio = int(input("Informe o que deseja fazer: "))
+                if acaoRelatorio == 0: print(Clientes)
+                elif acaoRelatorio == 1: print(Passagens)
+                elif acaoRelatorio == 2: print(Avioes)
+                elif acaoRelatorio == 3: print(Tripulocao)
+                elif acaoRelatorio == 4: continue
+                else: print("Informe uma ação Valida")
+
             except:
                 print("Informe uma ação valida")
-            if acaoRelatorio == 0: print(Clientes)
-            elif acaoRelatorio == 1: print(Passagens)
-            elif acaoRelatorio == 2: print(Avioes)
-            elif acaoRelatorio == 3: print(Tripulocao)
-            elif acaoRelatorio == 4: continue
-            else: print("Informe uma ação Valida22")
-
         elif acao == 1:
         
             nome = input("Informe o Nome: ")
@@ -94,6 +94,6 @@ while True:
         else: print("Digite uma ação Valida")
 
     except ValueError:
-        print("Informe uma ação valida1")
+        print("Informe uma ação valida")
 
     
