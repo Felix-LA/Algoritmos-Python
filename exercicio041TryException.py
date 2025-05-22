@@ -14,7 +14,7 @@ while True:
     try:
         acao = int(input("Informe o que deseja fazer: "))
         
-        if acao == '0':
+        if acao == 0:
             print("------------MENU RELATORIOS------------")
             print("0 - Relatorio de Clientes")
             print("1 - Relatorio de Passagens")
@@ -25,14 +25,14 @@ while True:
                 acaoRelatorio = int(input("Informe o que deseja fazer: "))
             except:
                 print("Informe uma ação valida")
-            if acaoRelatorio == '0': print(Clientes)
-            elif acaoRelatorio == '1': print(Passagens)
-            elif acaoRelatorio == '2': print(Avioes)
-            elif acaoRelatorio == '3': print(Tripulocao)
-            elif acaoRelatorio == '4': continue
+            if acaoRelatorio == 0: print(Clientes)
+            elif acaoRelatorio == 1: print(Passagens)
+            elif acaoRelatorio == 2: print(Avioes)
+            elif acaoRelatorio == 3: print(Tripulocao)
+            elif acaoRelatorio == 4: continue
             else: print("Informe uma ação Valida22")
 
-        elif acao == '1':
+        elif acao == 1:
         
             nome = input("Informe o Nome: ")
             sobreNome = input("Informe o Sobrenome: ")
@@ -50,9 +50,9 @@ while True:
                         'Endereço' : endereco, 'Telefone' : fone, 'idade' : idade}
 
         
-        elif acao == '2':
+        elif acao == 2:
             destino = input("Informe o Destino do Voo: ")
-            origem = input("Informe a Origem do Voo")
+            origem = input("Informe a Origem do Voo: ")
             duracao = int(input("Informe a duração do Voo(em Minutos): "))
             valorPassagem = float(input("Informe o Valor da Passagem: "))
             desconto = valorPassagem * 0.05
@@ -60,7 +60,7 @@ while True:
             Passagens [origem, destino] = {'Origem' : origem, 'Destino' : destino, 'Duração' : duracao, 
                                        'ValorDePasagem' : valorPassagem, 'Desconto' : desconto}
         
-        elif acao  == '3':
+        elif acao  == 3:
             modelo = input("Informe o Modelo do Aviao: ")
             cor = input("Informe a Cor do Aviao: ")
             try:
@@ -73,7 +73,7 @@ while True:
             Avioes [modelo, cor, ano] = {'Modelo' : modelo, 'Ano' : ano, 'Cor' : cor, 'HorasDeVoo' : horasDeVoo,
                                      'QuantidadeDePassageiros' : quantidadeDePassageiros}
         
-        elif acao == '4':
+        elif acao == 4:
             nome = input("Informe o Nome do Tripulante: ")
             cargo = input("Informe o Cargo do Tripulante: ")
             dataDeAdmissao = input("Informe a data de Admissao: ")
@@ -87,7 +87,7 @@ while True:
             Tripulocao [nome, cargo] = {'Nome' : nome, 'Cargo' : cargo, 'Idade' : idade,
                                     'Data de Admissao' : dataDeAdmissao, 'Telefone' : fone}
         
-        elif acao == '5':
+        elif acao == 5:
             print("Bye - Bye")
             break
      
