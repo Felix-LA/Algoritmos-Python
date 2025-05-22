@@ -53,10 +53,13 @@ while True:
         elif acao == 2:
             destino = input("Informe o Destino do Voo: ")
             origem = input("Informe a Origem do Voo: ")
-            duracao = int(input("Informe a duração do Voo(em Minutos): "))
-            valorPassagem = float(input("Informe o Valor da Passagem: "))
-            desconto = valorPassagem * 0.05
-
+            try:
+                valorPassagem = float(input("Informe o Valor da Passagem: "))
+                duracao = int(input("Informe a duração do Voo(em Minutos): "))
+                desconto = valorPassagem * 0.05
+            except:
+                print("Informe um Valor Numerico: ")
+                
             Passagens [origem, destino] = {'Origem' : origem, 'Destino' : destino, 'Duração' : duracao, 
                                        'ValorDePasagem' : valorPassagem, 'Desconto' : desconto}
         
