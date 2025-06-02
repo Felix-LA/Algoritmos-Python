@@ -52,4 +52,25 @@
 # # bastante usado para imagens
 # b = open("file.txt", "rb")
 
+# pode-se usar o With open em banco de daos tambem
+# mais seguro
+# forma de abrir e fechar o arquivo txt
+# ele abre, faz o que vc quiser e depois fecha sem precisar do .close()
+# with open ("file.txt", "a") as x:
+#     x.write("Novo cadastro\n")
+
+
+# mostra a linha, ler a linha
+# with open ("file.txt", "r") as x:
+#     linhas = x.readlines()
+#     print(linhas[2])
+
+
+# forma de deletar as linhas
+# with open ("file.txt", "r") as x:
+#     linhas = x.readlines()
+#     del linhas[2]
+# with open("file.txt", "r") as x:
+#     x.writelines(linhas)
+     
 
