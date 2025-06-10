@@ -1,0 +1,1 @@
+# Escreva uma função que receba uma palavra e retorne True se ela for um palíndromo.

@@ -1,0 +1,1 @@
+# Crie uma função que receba uma lista de strings e retorne a maior delas.

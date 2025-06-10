@@ -7,4 +7,4 @@ def calculoFatorial(num):
         i = i - 1
     print(num)
 
-calculoFatorial(6)
+calculoFatorial(5)
